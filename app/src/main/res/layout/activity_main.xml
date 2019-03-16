@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.MainActivity">
+
+    <ListView
+        android:id="@+id/lvSources"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/btnsort"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/button_backgorund"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="SORT"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/btnsort"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toStartOf="@+id/btnsort"
+        android:layout_toLeftOf="@+id/btnsort"
+        android:background="@drawable/button_backgorund"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="ADD"
+        android:textColor="#fff"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/btnremove"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/btnsort"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toEndOf="@+id/btnsort"
+        android:layout_toRightOf="@+id/btnsort"
+        android:background="@drawable/button_backgorund"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Remove"
+        android:textColor="#fff"
+        android:textSize="13dp" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_backgorund"
+        android:src="@drawable/ic_home_black_24dp" />
+
+    <Button
+        android:id="@+id/btnHelpMain"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/button_backgorund"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="?"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCreateBibliography"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button_backgorund"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="create Bibliography"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/lvSources"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-38dp"
+        android:background="@drawable/logo_title" />
+
+</RelativeLayout>

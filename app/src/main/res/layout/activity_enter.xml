@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_anim"
+    tools:context=".EnterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:gravity="center_horizontal"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:background="@drawable/logo_empty2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="4"
+
+                >
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="59dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/btnNew"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_backgorund"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Exit"
+
+                    android:textColor="#fff" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp" />
+
+                <Button
+                    android:id="@+id/btnNew"
+                    android:layout_width="59dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_backgorund"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Enter Your List"
+                    android:textColor="#fff"></Button>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp" />
+
+                <Button
+                    android:id="@+id/btnHelp"
+                    android:layout_width="59dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/btnNew"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_backgorund"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="?"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
